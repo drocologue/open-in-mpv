@@ -1,0 +1,40 @@
+{
+   "action": {
+      "default_title": "__MSG_page_action__"
+   },
+   "background": {
+      "service_worker": "worker.js"
+   },
+   "commands": {
+      "_execute_action": {
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "homepage_url": "https://webextension.org/listing/open-in-vlc.html",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "/data/icons/128.png",
+      "16": "/data/icons/16.png",
+      "256": "/data/icons/256.png",
+      "32": "/data/icons/32.png",
+      "48": "/data/icons/48.png",
+      "512": "/data/icons/512.png",
+      "64": "/data/icons/64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2Hs7oRGtwgZ/snRvwe9eI+Z2r0mMAvujrWedZXtqmqefquRCtHmrnMJEnwldJzgVYPfOhqTp0Da1AQFRwg57BvlVxukVnsJQz2ZaXaFufSGfkxiwrqlWLgP41i7tlnXd9uJN+Ns1xDAKVoW6QhfG+06I28349VHl3NLMM81y9EtysAxfI/DMiKhK7YWngvG2xuNqNf9jtUIedKbl47vAWhPxEYqDsnGu+ein77fPJwPnsAw2mcTxVLpdjvxHw7NvyUwtWmKQQbTdpPmzkRs0vDrzmD+yDlkjzrBqNS3eESZ2icas4+fx5uhNTj2Y9U33ZL46fRRozroLFATeoVpM2wIDAQAB",
+   "manifest_version": 3,
+   "name": "Open in VLC™ media player",
+   "optional_permissions": [ "downloads" ],
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "/data/options/index.html"
+   },
+   "permissions": [ "storage", "contextMenus", "nativeMessaging", "webRequest", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.4.3",
+   "web_accessible_resources": [ {
+      "matches": [ "*://*/*" ],
+      "resources": [ "/data/inject/*" ]
+   } ]
+}
