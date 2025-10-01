@@ -1,17 +1,3 @@
-# Open in VLC™ media player
+# Open in MPV
 
-The "Open in VLC™ media player" extension sends video and audio links to the well-known VLC media player. This way, you can watch online streams in this external player. To send these links to the VLC media player, right-click over the video or audio link and use the context menu item.
-
-### YouTube Preview
-[![YouTube Preview](https://img.youtube.com/vi/PtBh9JzeueE/0.jpg)](https://www.youtube.com/watch?v=PtBh9JzeueE)
-
-### Links
-  * Homepage: https://webextension.org/listing/open-in-vlc.html
-  * Chrome Webstore: https://chrome.google.com/webstore/detail/open-in-vlc-media-player/ihpiinojhnfhpdmmacgmpoonphhimkaj
-  * Firefox add-ons: https://addons.mozilla.org/en-US/firefox/addon/open-in-vlc/
-  * Opera addons: https://addons.opera.com/en/extensions/details/open-in-vlc-media-player/
-  * Edge add-ons: https://microsoftedge.microsoft.com/addons/detail/open-in-vlc%E2%84%A2-media-player/hjfcjapkfahlmlefedkkpbbkeddpnnlc
-
-### Development Comment
-
-Add the id of the temporary extension to the list of allowed extensions to try the developer version. To do so, [download](https://github.com/andy-portmen/native-client/releases) the native client, edit the [config.js](https://github.com/andy-portmen/native-client/blob/master/config.js) file, then reinstall it.
+OPEN IN MPV IS A FORK OF OPEN IN VLC SO I STOLE EVERYTHING AND MODIFY THE MANIFEST WITH CLAUDE TO USE MPV INSTEAD OF VLC SO DOWNLOAD THIS https://github.com/drocologue/open-in-mpv/tree/master/0.4.3_0%20-%20Copie and load inside chrome with developper mode, u should also have [ytb dl ins](https://github.com/yt-dlp/yt-dlp) installed and set inside ur path, mpv should also be inside ur path and  i think it should work i will maybe make a preview video of this but im lazy  so there we go
