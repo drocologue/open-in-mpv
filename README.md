@@ -1,35 +1,58 @@
 # Open in MPV
 
-OPEN IN MPV IS A FORK OF OPEN IN VLC SO I STOLE EVERYTHING AND MODIFY THE MANIFEST WITH CLAUDE TO USE MPV INSTEAD OF VLC SO DOWNLOAD THIS https://github.com/drocologue/open-in-mpv/tree/master/0.4.3_0%20-%20Copie and load inside chrome with developper mode, u should also have [ytb dl ins](https://github.com/yt-dlp/yt-dlp) installed and set inside ur path, mpv should also be inside ur path and  i think it should work i will maybe make a preview video of this but im lazy  so there we go
+**Open in MPV** is a fork of Open in VLC. I took everything and modified the manifest with Claude to use MPV instead of VLC.
 
-preview inside this post https://www.reddit.com/r/mpv/comments/1nvjwt2/open_any_video_in_mpv_even_embedded/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+## Installation Instructions
 
+1. **Download the extension:**  
+   Get it from [https://github.com/drocologue/open-in-mpv/tree/master/0.4.3_0%20-%20Copie](https://github.com/drocologue/open-in-mpv/tree/master/0.4.3_0%20-%20Copie)
 
+2. **Load in Chrome:**  
+   Enable Developer Mode in Chrome and load the unpacked extension.
 
+3. **Prerequisites:**
+   - Install [yt-dlp](https://github.com/yt-dlp/yt-dlp) and add it to your PATH
+   - Install MPV and add it to your PATH
 
+If everything is set up correctly, it should work. I might make a preview video later, but I'm lazy, so here we go.
 
+## Preview
+Check out the preview in this Reddit post:  
+[https://www.reddit.com/r/mpv/comments/1nvjwt2/open_any_video_in_mpv_even_embedded/](https://www.reddit.com/r/mpv/comments/1nvjwt2/open_any_video_in_mpv_even_embedded/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
-in case i never update this thing, go on chromewebstore install the original open in vlc it will be stocked inside this %LOCALAPPDATA%\Google\Chrome\User Data\Default\Extensions u can sort by newly created to found it then, take the open.js inside and give it to claude ai alongside with this prompt and u should be able to fix it:
+## Manual Update Instructions
 
-"I have an updated version of open.js from the Open in VLC extension. I need you to modify it to work with MPV player instead of VLC. The changes should:
+In case I never update this extension, here's how to do it yourself:
+
+1. Go to the Chrome Web Store and install the original **Open in VLC** extension
+2. Find it in `%LOCALAPPDATA%\Google\Chrome\User Data\Default\Extensions`  
+   (Sort by "Date Created" to find the newest one)
+3. Extract the `open.js` file
+4. Give it to Claude AI along with this prompt:
+
+```
+I have an updated version of open.js from the Open in VLC extension. I need you to modify it to work with MPV player instead of VLC. The changes should:
+
 1. Replace VLC command-line arguments with MPV equivalents:
-
-Use --http-header-fields=Referer: <url> for referrer
-Use --user-agent=<agent> for user agent
-Use --force-media-title=<title> for media title
+   - Use --http-header-fields=Referer: <url> for referrer
+   - Use --user-agent=<agent> for user agent
+   - Use --force-media-title=<title> for media title
 
 2. Update Windows executable paths to:
+   - C:\Program Files\mpv\mpv.exe
+   - C:\Program Files (x86)\mpv\mpv.exe
+   - %LOCALAPPDATA%\mpv\mpv.exe
+   - C:\mpv\mpv.exe
+   - C:\Program Files\mpv.net\mpv.exe
 
-C:\Program Files\mpv\mpv.exe
-C:\Program Files (x86)\mpv\mpv.exe
-%LOCALAPPDATA%\mpv\mpv.exe
-C:\mpv\mpv.exe
-C:\Program Files\mpv.net\mpv.exe
+3. Update Linux/Mac paths to use mpv command
 
-**3. Update Linux/Mac paths to use mpv command
-**4. Change default media-player from 'VLC' to 'MPV'
+4. Change default media-player from 'VLC' to 'MPV'
+
 Here's the original open.js file:
-[paste the new open.js content here]"
+[paste the new open.js content here]
+```
 
+5. Copy the output from Claude and paste it into `open.js` (delete the old content first)
 
-THEN what it give u copy paste it inside open.js after delete everything inside it before
+That's it!
